@@ -1,0 +1,162 @@
+
+#education
+{
+  padding: 5rem  0;
+  /* background-color: #ebf5fc; */
+  background-color: #1d1f1f;
+  /* background-image: url(../img/intro-bg2.jpg); */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.heading
+{
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  /* margin-right: -1px; */
+  margin-bottom: 5rem;
+  text-align: center;
+  color: rgb(252, 250, 250);
+  position: relative;
+  font-weight: bold;
+}
+.heading::after
+{
+  content: "";
+  width: 10rem;
+  height: .8rem;
+  position: absolute;
+  background-color: red;
+  bottom: -0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+.details-container
+{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.education-col
+{
+  position: relative;
+  width: 370px;
+  height: 520px;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+              inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+              5px 5px 5px rgba(0, 0, 0, 0.05),
+              -5px -5px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+  
+}
+.education-col .box
+{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #ebf5fc;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.5s;
+  /* width: 35rem;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.855);
+  padding-bottom: 2rem; */
+}
+.education-col:hover .box
+{
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+  color: #fff;
+}
+.education-col .box .card-img
+{
+  width: 35%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 999;
+  margin-top: 2rem;
+  border: 1px solid gray;
+  box-shadow: .2rem .6rem  rgba(0, 0, 0, .5)
+}
+.education-col .box h2
+{
+  text-align: center;
+}
+.education-col .box .marklist
+{
+  padding: 1rem;
+  color: #fff;
+  background-color: #03a9f4;
+  font-size: 15px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  border: none;
+}
+.education-col:hover .box .marklist
+{
+  background: #ff568f;
+}
+
+
+@media screen and (min-width: 700px)
+{
+  .details-container
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .education-col
+  {
+    margin: 2rem;
+  }
+}
+
+@keyframes fadeIn 
+{
+  from
+  {
+    opacity: 0;
+  }
+  to
+  {
+    opacity: 1;
+  }
+}
+
+.education-col:nth-child(3)
+{
+  animation: fadeIn .5s .5s backwards;
+}
+.education-col:nth-child(2)
+{
+  animation: fadeIn .5s 1s backwards;
+}
+.education-col:nth-child(1)
+{
+  animation: fadeIn .5s 1.5s backwards;
+}
+
+
+
+.fa-database, .fa-cloud, .code, .fa-share-alt
+{
+  font-size: 3em;
+  color: #000;
+}

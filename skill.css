@@ -1,0 +1,389 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#skills
+{
+  padding: 5rem  0;
+  background-color: #e3edf7;
+}
+.skill-heading
+{
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  /* margin-right: -1px; */
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #000;
+  position: relative;
+  font-weight: bold;
+}
+.skill-heading::after
+{
+  content: "";
+  width: 10rem;
+  height: .8rem;
+  position: absolute;
+  background-color: red;
+  bottom: -0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+.skill-container
+{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  
+}
+.skill-card
+{
+  position: relative;
+  width: 400px;
+  height: 500px;
+  /* margin:  5%; */
+  /* margin-top: 5px; */
+  padding: 20px 50px 40px;
+  background-color: #e3edf7;
+  display: flex;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 4px 4px 6px -6px rgba(0,0,0,0.2), 
+             4px 4px 15px -10px rgba(255, 255, 255, 0.7),
+              5px 5px 10px 10px rgba(255,255,255,1),
+              6px 6px 10px 1px rgba(0,0,0,0.15);
+  border-radius: 15px;
+}
+.skill-name
+{
+  padding: 10px;
+  font-size: large;
+  text-align: left;
+  position: relative;
+}
+.outer-bar
+{
+  width: 300px;
+  height: 10px;
+  position: relative;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.15), 
+              -6px -2px 5px -1px rgba(255,255,255,0.7);
+}
+.inner-bar
+{
+  height: 10px;
+  width: 0%;
+  position: absolute;
+  top: -5px;
+  /* background-color: chartreuse; */
+  border-radius: 10px;
+  /* animation: anim 3s linear forwards; */
+}
+.skill-per
+{
+  display: inline;
+  position: absolute;
+  right: 0;
+}
+.html
+{
+  animation: anim 3s linear forwards;
+}
+.css
+{
+  animation: anim1 2.5s linear forwards;
+}
+.javas
+{
+  animation: anim2 2.5s linear forwards;
+}
+.php
+{
+  animation: anim3 2.5s linear forwards;
+}
+.dbms
+{
+  animation: anim4 2.5s linear forwards;
+}
+.jquery
+{
+  animation: anim5 2.5s linear forwards;
+}
+.react
+{
+  animation: anim6 2.5s linear forwards;
+}
+.fa-database, .fa-cloud, .code, .fa-share-alt
+{
+  font-size: 3em;
+  color: #000;
+
+}
+.skill-card2
+{
+  /* position: relative; */
+  width: 600px;
+  height: 550px;
+  margin: .5% 5%;
+  /* margin-top: 4%; */
+  padding: 20px 50px 40px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 
+              6px 6px 10px -1px rgba(255, 255, 255, 0.7),
+             -6px -6px 10px 6px rgba(0,0,0,0.15),
+              -6px -6px 10px 6px rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+}
+.skill
+{
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.skill:hover
+{
+  transform: translateY(-15px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+  color: #fff;
+}
+.prof-heading
+{
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+.p-outer
+{
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+.p-inner
+{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), 
+              inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+              -0.5px -0.5px 0px  rgba(255,255,255,1),
+              0.5px 0.5px 0px rgba(0,0,0,0.15),
+              0px 12px 10px -10px rgba(0,0,0,0.05);
+  padding: 20px;
+}
+#number, #number1, #number2, #number3
+{
+  font-weight: 700;
+  font-size: 3rem;
+  color: #000;
+}
+circle
+{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: crcl 2s linear forwards;
+}
+#creative
+{
+  animation: crcl1 2s linear forwards;
+}
+#team
+{
+  animation: crcl2 2s linear forwards;
+}
+#self
+{
+  animation: crcl3 2s linear forwards;
+}
+@keyframes crcl1
+{
+  100%
+  {
+    stroke-dashoffset: 112;
+  }
+}
+@keyframes crcl2
+{
+  100%
+  {
+    stroke-dashoffset: 67;
+  }
+}
+@keyframes crcl3
+{
+  100%
+  {
+    stroke-dashoffset: 90;
+  }
+}
+
+svg 
+{
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  
+}
+.prof-sub-heading
+{
+  text-align: center;
+}
+@keyframes crcl 
+{
+  100%
+  {
+    stroke-dashoffset: 157;
+  }
+}
+
+@keyframes anim
+{
+  100%
+  {
+    width: 95%;
+    transform: translateY(50%);
+    background-color: #f00;
+  }
+
+}
+@keyframes anim1
+{
+  100%
+  {
+    width: 85%;
+    transform: translateY(50%);
+    background-color: #f00;
+  }
+}
+@keyframes anim2
+{
+  100%
+  {
+    width: 65%;
+    transform: translateY(50%);
+    background-color: #f00;
+  }
+
+}@keyframes anim3
+{
+  100%
+  {
+    width: 65%;
+    transform: translateY(50%);
+    background-color: #f00;
+  }
+
+}@keyframes anim4
+{
+  100%
+  {
+    width: 75%;
+    transform: translateY(50%);
+    background-color: #f00;
+  }
+}
+@keyframes anim5
+{
+  100%
+  {
+    width: 45%;
+    transform: translateY(50%);
+    background-color: #f00;
+  }
+
+}
+@keyframes anim6
+{
+  100%
+  {
+    width: 45%;
+    transform: translateY(50%);
+    background-color: #f00;
+  }
+
+}
+@media screen and (min-width: 700px)
+{
+  .skill-container
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* @media screen and (max-width: 768px)
+{ 
+  .about_container
+  {
+    padding: 2rem;
+    min-width: 45rem;
+    max-width: 45rem;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .me 
+  {
+    min-width: 30rem;
+    max-width: 30rem;
+    height: 400px;
+    min-height: fit-content;
+    transform: translate(0, -9rem);
+  }
+  .me-intro
+ {
+    font-size: 1.6rem;
+    text-align: center;
+    font-style: italic;
+    transform: translate(0, -6rem);
+ }
+  
+} */
+
+
+.big-card
+{
+  width: 100%;
+  height: 500px;
+  background-color: turquoise;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row
+{
+  width: 500px;
+  height: 200px;
+  margin-bottom: 20px;
+  /* border: 2px solid black; */
+}
+.col
+{
+  height: 210px;
+  position: relative;
+  /* display: inline; */
+  padding: 20px;
+  margin: 5px;
+  padding-left: 40px;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), 
+              inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+              -0.5px -0.5px 0px  rgba(255,255,255,1),
+              0.5px 0.5px 0px rgba(0,0,0,0.15),
+              0px 12px 10px -10px rgba(0,0,0,0.05);
+}
