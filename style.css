@@ -11,7 +11,7 @@ html {
 .header {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../img/webp.png);
+  background-image: url(../webp.png);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -101,7 +101,7 @@ nav .fa {
 
 @media (max-width: 768px) {
   .header {
-    background-image: url(../img/midiump.png);
+    background-image: url(../midiump.png);
   }
   .text_box h1 {
     font-size: 4.2rem;
